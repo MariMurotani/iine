@@ -22,3 +22,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+```clickhouse
+bin/rails server -b 0.0.0.0
+```

@@ -18,5 +18,6 @@ class RoomChannel < ApplicationCable::Channel
     @count = counter.count
     #RoomChannel.broadcast 'room_channel', message: "hoge"
     ActionCable.server.broadcast 'room_channel', message: @count
+    system('beep')
   end
 end
