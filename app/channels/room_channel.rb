@@ -18,6 +18,6 @@ class RoomChannel < ApplicationCable::Channel
     @count = counter.count
     #RoomChannel.broadcast 'room_channel', message: "hoge"
     ActionCable.server.broadcast 'room_channel', message: @count
-    system('beep')
+    system('afplay /System/Library/Sounds/Submarine.aiff')
   end
 end
