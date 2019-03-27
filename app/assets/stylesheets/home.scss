@@ -1,0 +1,22 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.body{
+  width:700px;
+  margin-right: auto;
+  margin-left : auto;
+}
+.main_content{
+  width:500px;
+  margin-right: auto;
+  margin-left : auto;
+  >div{
+    margin-right: auto;
+    margin-left : auto;
+  }
+}
+#msg_box{
+  font-size: 300pt;
+
+}
