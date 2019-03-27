@@ -17,6 +17,6 @@ class RoomChannel < ApplicationCable::Channel
     counter.save!
     @count = counter.count
     #RoomChannel.broadcast 'room_channel', message: "hoge"
-    ActionCable.server.broadcast 'room_channel', message: data['message']
+    ActionCable.server.broadcast 'room_channel', message: @count
   end
 end

@@ -8,7 +8,7 @@ App.room = App.cable.subscriptions.create "RoomChannel",
   received: (data) ->
     # Called when tconsole.log(data)
     # here's incoming data on the websocket for this channel
-    alert data['message']
+    $("#msg_box").html(data["message"].toString())
   speak: (message)->
     @perform 'speak', message
   vote: ->
