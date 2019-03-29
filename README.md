@@ -21,8 +21,8 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+* localインスタンスたちあげ
+```ruby
+bin/rails server -b 0.0.0.0 -p 4649
+```
 
-```clickhouse
-bin/rails server -b 0.0.0.0
-```# iine
